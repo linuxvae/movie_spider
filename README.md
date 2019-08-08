@@ -11,9 +11,9 @@
 
 1. python3 login.py -g questionId ：这一步需要输入注册的电话号码和密码及验证码（服务器请拷贝出来查看）其他登录知乎登录方式请参考的[这个](https://github.com/zkqiang/Zhihu-Login)git地址
 
-   `python login.py -g 31537241` 获取[你有哪些看过五遍以上的电影？](https://www.zhihu.com/question/31537241) 下面的回答形成zhihu.txt
+   `python login.py -g 31537241` 获取[你有哪些看过五遍以上的电影？](https://www.zhihu.com/question/31537241) 所有回答输出：zhihu.txt
 
-   这个命令输出的数据是append方式，所以可以多个回答执行多次
+   这个命令输出的数据是append方式，所以可以多个questionID执行多次
 
 2. python3 zhihu_login.py -o zhihu.txt   输出zhihu.txt 下以《》格式的词，我们统计次数并输出到out_movie.txt 并输出w.png 为词云图
 
@@ -21,7 +21,6 @@
 <p align="center">
 	<img src="https://github.com/linuxvae/movie_spider/blob/master/w.png?raw=true" alt="Sample"  width="450" height="450">
 	<p align="center">
-		<em>图片示例2</em>
 	</p>
 
 
