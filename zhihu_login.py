@@ -287,11 +287,9 @@ class ZhihuAccount(object):
         word_counts=[]
         with open(filePath, 'r', encoding='utf-8') as f:
             txt = f.read()
-            print(txt)
             pattern = '《(.*?)》'
             dwstr = re.findall(pattern, txt, re.S|re.M)
             for word in dwstr:
-                print(word)
                 object_list.append(word)
 
             # 词频统计
